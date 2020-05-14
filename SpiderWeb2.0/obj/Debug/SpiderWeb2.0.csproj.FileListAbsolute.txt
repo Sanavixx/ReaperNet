@@ -1,0 +1,29 @@
+C:\Users\Edward\Desktop\Projects\SpiderWeb\SpiderWeb2.0\SpiderWeb2.0\obj\Debug\App.g.cs
+C:\Users\Edward\Desktop\Projects\SpiderWeb\SpiderWeb2.0\SpiderWeb2.0\obj\Debug\SpiderWeb2.0_MarkupCompile.cache
+C:\Users\Edward\Desktop\Projects\SpiderWeb\SpiderWeb2.0\SpiderWeb2.0\obj\Debug\SpiderWeb2.0_MarkupCompile.lref
+C:\Users\Edward\Desktop\Projects\SpiderWeb\SpiderWeb2.0\SpiderWeb2.0\bin\Debug\SpiderWeb2.0.exe.config
+C:\Users\Edward\Desktop\Projects\SpiderWeb\SpiderWeb2.0\SpiderWeb2.0\bin\Debug\SpiderWeb2.0.exe
+C:\Users\Edward\Desktop\Projects\SpiderWeb\SpiderWeb2.0\SpiderWeb2.0\bin\Debug\SpiderWeb2.0.pdb
+C:\Users\Edward\Desktop\Projects\SpiderWeb\SpiderWeb2.0\SpiderWeb2.0\obj\Debug\SpiderWeb2.0.g.resources
+C:\Users\Edward\Desktop\Projects\SpiderWeb\SpiderWeb2.0\SpiderWeb2.0\obj\Debug\SpiderWeb2._0.Properties.Resources.resources
+C:\Users\Edward\Desktop\Projects\SpiderWeb\SpiderWeb2.0\SpiderWeb2.0\obj\Debug\SpiderWeb2.0.csproj.GenerateResource.cache
+C:\Users\Edward\Desktop\Projects\SpiderWeb\SpiderWeb2.0\SpiderWeb2.0\obj\Debug\SpiderWeb2.0.csproj.CoreCompileInputs.cache
+C:\Users\Edward\Desktop\Projects\SpiderWeb\SpiderWeb2.0\SpiderWeb2.0\obj\Debug\SpiderWeb2.0.exe
+C:\Users\Edward\Desktop\Projects\SpiderWeb\SpiderWeb2.0\SpiderWeb2.0\obj\Debug\SpiderWeb2.0.pdb
+C:\Users\Edward\Desktop\Projects\SpiderWeb\SpiderWeb2.0\SpiderWeb2.0\obj\Debug\SpiderWeb2.0_Content.g.cs
+C:\Users\Edward\Desktop\Projects\SpiderWeb\SpiderWeb2.0\SpiderWeb2.0\bin\Debug\Assets\img_background.wmv
+C:\Users\Edward\Desktop\Projects\SpiderWeb\SpiderWeb2.0\SpiderWeb2.0\obj\Debug\Mainwindow.g.cs
+C:\Users\Edward\Desktop\Projects\SpiderWeb\SpiderWeb2.0\SpiderWeb2.0\obj\Debug\Mainwindow.baml
+C:\Users\Edward\Desktop\Projects\SpiderWeb\SpiderWeb2.0\SpiderWeb2.0\bin\Debug\MaterialDesignColors.dll
+C:\Users\Edward\Desktop\Projects\SpiderWeb\SpiderWeb2.0\SpiderWeb2.0\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Edward\Desktop\Projects\SpiderWeb\SpiderWeb2.0\SpiderWeb2.0\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Edward\Desktop\Projects\SpiderWeb\SpiderWeb2.0\SpiderWeb2.0\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Edward\Desktop\Projects\SpiderWeb\SpiderWeb2.0\SpiderWeb2.0\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Edward\Desktop\Projects\SpiderWeb\SpiderWeb2.0\SpiderWeb2.0\obj\Debug\SpiderWeb2.0.csproj.CopyComplete
+C:\Users\Edward\Desktop\Projects\SpiderWeb\SpiderWeb2.0\SpiderWeb2.0\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Edward\Desktop\Projects\SpiderWeb\SpiderWeb2.0\SpiderWeb2.0\obj\Debug\Shared Drives.g.cs
+C:\Users\Edward\Desktop\Projects\SpiderWeb\SpiderWeb2.0\SpiderWeb2.0\obj\Debug\Shared Drives.baml
+C:\Users\Edward\Desktop\Projects\SpiderWeb\SpiderWeb2.0\SpiderWeb2.0\bin\Debug\Shared Drives.xaml.cs
+C:\Users\Edward\Desktop\Projects\SpiderWeb\SpiderWeb2.0\SpiderWeb2.0\obj\Debug\SpiderWeb2.0.csprojAssemblyReference.cache
+C:\Users\Edward\Desktop\Projects\SpiderWeb\SpiderWeb2.0\SpiderWeb2.0\bin\Debug\Data\SDrives.txt
+C:\Users\Edward\Desktop\Projects\SpiderWeb\SpiderWeb2.0\SpiderWeb2.0\bin\Debug\Assets\Img_background.mp4
