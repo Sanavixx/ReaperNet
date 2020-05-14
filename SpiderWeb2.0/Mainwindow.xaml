@@ -353,7 +353,7 @@
                                                 <BeginStoryboard>
                                                     <Storyboard>
                                                         <MediaTimeline 
-                                                            Source="C:\Users\Edward\Desktop\Projects\SpiderWeb\SpiderWeb2.0\SpiderWeb2.0\Assets\Img_background.mp4" 
+                                                            Source="C:\SpiderWeb2\SpiderWeb2.0\SpiderWeb2.0\Assets\Img_background.mp4"
                                                             Storyboard.TargetName="myMediaElement"  
                                                             RepeatBehavior="Forever"/>
                                                     </Storyboard>
