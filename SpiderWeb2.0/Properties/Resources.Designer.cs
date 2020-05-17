@@ -59,19 +59,5 @@ namespace SpiderWeb2._0.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to C:\Users\Edward\Desktop\POE-TradeMacro-master\data\crafted
-        ///C:\Users\Edward\Desktop\SpiderWEB
-        ///C:\Users\Edward\Documents\BioWare\Mass Effect
-        ///C:\Users\Edward\Downloads\PathOfBuilding-1.4.78\Classes
-        ///
-        ///.
-        /// </summary>
-        public static string SDrives {
-            get {
-                return ResourceManager.GetString("SDrives", resourceCulture);
-            }
-        }
     }
 }

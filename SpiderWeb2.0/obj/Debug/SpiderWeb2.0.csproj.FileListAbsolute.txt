@@ -30,7 +30,6 @@ C:\Users\Edward\Desktop\Projects\SpiderWeb\SpiderWeb2.0\SpiderWeb2.0\bin\Debug\A
 C:\SpiderWeb2\SpiderWeb2.0\SpiderWeb2.0\bin\Debug\Assets\Img_background.mp4
 C:\SpiderWeb2\SpiderWeb2.0\SpiderWeb2.0\bin\Debug\Assets\img_background.wmv
 C:\SpiderWeb2\SpiderWeb2.0\SpiderWeb2.0\bin\Debug\Data\SDrives.txt
-C:\SpiderWeb2\SpiderWeb2.0\SpiderWeb2.0\bin\Debug\Shared Drives.xaml.cs
 C:\SpiderWeb2\SpiderWeb2.0\SpiderWeb2.0\bin\Debug\SpiderWeb2.0.exe.config
 C:\SpiderWeb2\SpiderWeb2.0\SpiderWeb2.0\bin\Debug\SpiderWeb2.0.exe
 C:\SpiderWeb2\SpiderWeb2.0\SpiderWeb2.0\bin\Debug\SpiderWeb2.0.pdb
@@ -39,16 +38,13 @@ C:\SpiderWeb2\SpiderWeb2.0\SpiderWeb2.0\bin\Debug\MaterialDesignThemes.Wpf.dll
 C:\SpiderWeb2\SpiderWeb2.0\SpiderWeb2.0\bin\Debug\MaterialDesignColors.pdb
 C:\SpiderWeb2\SpiderWeb2.0\SpiderWeb2.0\bin\Debug\MaterialDesignThemes.Wpf.pdb
 C:\SpiderWeb2\SpiderWeb2.0\SpiderWeb2.0\bin\Debug\MaterialDesignThemes.Wpf.xml
-C:\SpiderWeb2\SpiderWeb2.0\SpiderWeb2.0\obj\Debug\SpiderWeb2.0.csprojAssemblyReference.cache
 C:\SpiderWeb2\SpiderWeb2.0\SpiderWeb2.0\obj\Debug\Mainwindow.g.cs
-C:\SpiderWeb2\SpiderWeb2.0\SpiderWeb2.0\obj\Debug\Shared Drives.g.cs
 C:\SpiderWeb2\SpiderWeb2.0\SpiderWeb2.0\obj\Debug\App.g.cs
 C:\SpiderWeb2\SpiderWeb2.0\SpiderWeb2.0\obj\Debug\SpiderWeb2.0_Content.g.cs
 C:\SpiderWeb2\SpiderWeb2.0\SpiderWeb2.0\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\SpiderWeb2\SpiderWeb2.0\SpiderWeb2.0\obj\Debug\SpiderWeb2.0_MarkupCompile.cache
 C:\SpiderWeb2\SpiderWeb2.0\SpiderWeb2.0\obj\Debug\SpiderWeb2.0_MarkupCompile.lref
 C:\SpiderWeb2\SpiderWeb2.0\SpiderWeb2.0\obj\Debug\Mainwindow.baml
-C:\SpiderWeb2\SpiderWeb2.0\SpiderWeb2.0\obj\Debug\Shared Drives.baml
 C:\SpiderWeb2\SpiderWeb2.0\SpiderWeb2.0\obj\Debug\SpiderWeb2.0.g.resources
 C:\SpiderWeb2\SpiderWeb2.0\SpiderWeb2.0\obj\Debug\SpiderWeb2._0.Properties.Resources.resources
 C:\SpiderWeb2\SpiderWeb2.0\SpiderWeb2.0\obj\Debug\SpiderWeb2.0.csproj.GenerateResource.cache
@@ -56,3 +52,14 @@ C:\SpiderWeb2\SpiderWeb2.0\SpiderWeb2.0\obj\Debug\SpiderWeb2.0.csproj.CoreCompil
 C:\SpiderWeb2\SpiderWeb2.0\SpiderWeb2.0\obj\Debug\SpiderWeb2.0.csproj.CopyComplete
 C:\SpiderWeb2\SpiderWeb2.0\SpiderWeb2.0\obj\Debug\SpiderWeb2.0.exe
 C:\SpiderWeb2\SpiderWeb2.0\SpiderWeb2.0\obj\Debug\SpiderWeb2.0.pdb
+C:\SpiderWeb2\SpiderWeb2.0\SpiderWeb2.0\obj\Debug\ExternalLinks.g.cs
+C:\SpiderWeb2\SpiderWeb2.0\SpiderWeb2.0\obj\Debug\ExternalLinks.baml
+C:\SpiderWeb2\SpiderWeb2.0\SpiderWeb2.0\obj\Debug\SpiderWeb2.0.csprojAssemblyReference.cache
+C:\SpiderWeb2\SpiderWeb2.0\SpiderWeb2.0\bin\Debug\FolderShortcuts.xaml.cs
+C:\SpiderWeb2\SpiderWeb2.0\SpiderWeb2.0\obj\Debug\FolderShortcuts.baml
+C:\SpiderWeb2\SpiderWeb2.0\SpiderWeb2.0\obj\Debug\FolderShortcuts.g.cs
+C:\SpiderWeb2\SpiderWeb2.0\SpiderWeb2.0\bin\Debug\System.Management.Automation.dll
+C:\SpiderWeb2\SpiderWeb2.0\SpiderWeb2.0\bin\Debug\Microsoft.Management.Infrastructure.dll
+C:\SpiderWeb2\SpiderWeb2.0\SpiderWeb2.0\bin\Debug\System.Management.Automation.xml
+C:\SpiderWeb2\SpiderWeb2.0\SpiderWeb2.0\bin\Debug\Newtonsoft.Json.dll
+C:\SpiderWeb2\SpiderWeb2.0\SpiderWeb2.0\bin\Debug\Newtonsoft.Json.xml
