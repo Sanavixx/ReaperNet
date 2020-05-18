@@ -350,23 +350,183 @@ namespace SpiderWeb2._0
         }
 
         // Retrieves System Information For ComputerNameTextBox
-        private void SystemTypeButton_Click(object sender, RoutedEventArgs e)
+        private void SystemCheckButton_Click(object sender, RoutedEventArgs e)
         {
-
+            ProgressBarReset();
             string pcName = ComputerNameTextBox.Text;
-            ProgressBar Progress = CompOSProgressBar;
-            Progress.Foreground = Brushes.DarkGreen;
-            Duration duration = new Duration(TimeSpan.FromSeconds(0.5));
-            DoubleAnimation doubleanimation = new DoubleAnimation(100, duration);
+
             using (PowerShell ps = PowerShell.Create())
             {
                 ps.AddScript(File.ReadAllText(@"C:\SpiderWeb2\SpiderWeb2.0\SpiderWeb2.0\Scripts\systemtype.ps1"), true).AddParameter("ComputerName", pcName).AddCommand("Out-String");
                 try
                 {
+                    SystemCheckButton.IsEnabled = false;
                     Collection<PSObject> results = ps.Invoke();
-                    Progress.BeginAnimation(ProgressBar.ValueProperty, doubleanimation);
+                    ProgressBarInitialize();
                     foreach (var test in results)
                     MainRichTextBox.AppendText(Environment.NewLine + Regex.Replace(test.ToString(), @"^\s+$[\r\n]*", string.Empty, RegexOptions.Multiline));
+                    MainRichTextBox.AppendText(Environment.NewLine);
+                    SystemCheckButton.IsEnabled = true;
+                }
+                catch (Exception f)
+                {
+                    Console.WriteLine(f.Message);
+                }
+
+            }
+        }
+
+        // Retrieves Mapped Printers For ComputerNameTextBox
+        private void PrintersButton_Click(object sender, RoutedEventArgs e)
+        {
+            ProgressBarReset();
+            string pcName = ComputerNameTextBox.Text;
+
+            using (PowerShell ps = PowerShell.Create())
+            {
+                ps.AddScript(File.ReadAllText(@"C:\SpiderWeb2\SpiderWeb2.0\SpiderWeb2.0\Scripts\printers.ps1"), true).AddParameter("ComputerName", pcName).AddCommand("Out-String");
+                try
+                {
+                    PrintersButton.IsEnabled = false;
+                    Collection<PSObject> results = ps.Invoke();
+                    ProgressBarInitialize();
+                    foreach (var test in results)
+                        MainRichTextBox.AppendText(Environment.NewLine + Regex.Replace(test.ToString(), @"^\s+$[\r\n]*", string.Empty, RegexOptions.Multiline));
+                    MainRichTextBox.AppendText(Environment.NewLine);
+                    PrintersButton.IsEnabled = true;
+                }
+                catch (Exception f)
+                {
+                    Console.WriteLine(f.Message);
+                }
+
+            }
+        }
+
+        // Retrieves Applications For ComputerNameTextBox
+        private void ApplicationsButton_Click(object sender, RoutedEventArgs e)
+        {
+            ProgressBarReset();
+            string pcName = ComputerNameTextBox.Text;
+
+            using (PowerShell ps = PowerShell.Create())
+            {
+                ps.AddScript(File.ReadAllText(@"C:\SpiderWeb2\SpiderWeb2.0\SpiderWeb2.0\Scripts\applications.ps1"), true).AddParameter("ComputerName", pcName).AddCommand("Out-String");
+                try
+                {
+                    ApplicationsButton.IsEnabled = false;
+                    MessageBox.Show("This will take a few moments, please wait.");
+                    Collection<PSObject> results = ps.Invoke();
+                    ProgressBarInitialize();
+                    MainRichTextBox.AppendText(Environment.NewLine + "Applications for " + pcName + " have been retrieved!");
+                    MainRichTextBox.AppendText(Environment.NewLine);
+                    ApplicationsButton.IsEnabled = true;
+                }
+                catch (Exception f)
+                {
+                    Console.WriteLine(f.Message);
+                }
+
+            }
+        }
+
+        // Retrieves Processes For ComputerNameTextBox
+        private void ProcessesButton_Click(object sender, RoutedEventArgs e)
+        {
+            ProgressBarReset();
+            string pcName = ComputerNameTextBox.Text;
+
+            using (PowerShell ps = PowerShell.Create())
+            {
+                ps.AddScript(File.ReadAllText(@"C:\SpiderWeb2\SpiderWeb2.0\SpiderWeb2.0\Scripts\processes.ps1"), true).AddParameter("ComputerName", pcName).AddCommand("Out-String");
+                try
+                {
+                    ProcessesButton.IsEnabled = false;
+                    MessageBox.Show("This will take a few moments, please wait.");
+                    Collection<PSObject> results = ps.Invoke();
+                    ProgressBarInitialize();
+                    MainRichTextBox.AppendText(Environment.NewLine + "Processes for " + pcName + " have been retrieved!");
+                    MainRichTextBox.AppendText(Environment.NewLine);
+                    ProcessesButton.IsEnabled = true;
+                }
+                catch (Exception f)
+                {
+                    Console.WriteLine(f.Message);
+                }
+
+            }
+        }
+
+        private void ServicesButton_Click(object sender, RoutedEventArgs e)
+        {
+            ProgressBarReset();
+            string pcName = ComputerNameTextBox.Text;
+
+            using (PowerShell ps = PowerShell.Create())
+            {
+                ps.AddScript(File.ReadAllText(@"C:\SpiderWeb2\SpiderWeb2.0\SpiderWeb2.0\Scripts\services.ps1"), true).AddParameter("ComputerName", pcName).AddCommand("Out-String");
+                try
+                {
+                    ServicesButton.IsEnabled = false;
+                    Collection<PSObject> results = ps.Invoke();
+                    ProgressBarInitialize();
+                    MainRichTextBox.AppendText(Environment.NewLine + "Services for " + pcName + " have been retrieved!");
+                    MainRichTextBox.AppendText(Environment.NewLine);
+                    ServicesButton.IsEnabled = true;
+                }
+                catch (Exception f)
+                {
+                    Console.WriteLine(f.Message);
+                }
+
+            }
+        }
+
+        // Retrieves Hot-Fixes For ComputerNameTextBox
+        private void GetHotFixButton_Click(object sender, RoutedEventArgs e)
+        {
+            ProgressBarReset();
+            string pcName = ComputerNameTextBox.Text;
+
+            using (PowerShell ps = PowerShell.Create())
+            {
+                ps.AddScript(File.ReadAllText(@"C:\SpiderWeb2\SpiderWeb2.0\SpiderWeb2.0\Scripts\hotfixes.ps1"), true).AddParameter("ComputerName", pcName).AddCommand("Out-String");
+                try
+                {
+                    GetHotFixButton.IsEnabled = false;
+                    Collection<PSObject> results = ps.Invoke();
+                    ProgressBarInitialize();
+                    foreach (var test in results)
+                        MainRichTextBox.AppendText(Environment.NewLine + Regex.Replace(test.ToString(), @"^\s+$[\r\n]*", string.Empty, RegexOptions.Multiline));
+                    MainRichTextBox.AppendText(Environment.NewLine);
+                    GetHotFixButton.IsEnabled = true;
+                }
+                catch (Exception f)
+                {
+                    Console.WriteLine(f.Message);
+                }
+
+            }
+        }
+
+        // Retrieves IP Configuration For ComputerNameTextBox
+        private void IPConfigButton_Click(object sender, RoutedEventArgs e)
+        {
+            ProgressBarReset();
+            string pcName = ComputerNameTextBox.Text;
+
+            using (PowerShell ps = PowerShell.Create())
+            {
+                ps.AddScript(File.ReadAllText(@"C:\SpiderWeb2\SpiderWeb2.0\SpiderWeb2.0\Scripts\ipconfig.ps1"), true).AddParameter("ComputerName", pcName).AddCommand("Out-String");
+                try
+                {
+                    IPConfigButton.IsEnabled = false;
+                    Collection<PSObject> results = ps.Invoke();
+                    ProgressBarInitialize();
+                    foreach (var test in results)
+                        MainRichTextBox.AppendText(Environment.NewLine + Regex.Replace(test.ToString(), @"^\s+$[\r\n]*", string.Empty, RegexOptions.Multiline));
+                    MainRichTextBox.AppendText(Environment.NewLine);
+                    IPConfigButton.IsEnabled = true;
                 }
                 catch (Exception f)
                 {
@@ -380,6 +540,28 @@ namespace SpiderWeb2._0
         private void ClearButton_Click(object sender, RoutedEventArgs e)
         {
             MainRichTextBox.Document.Blocks.Clear();
+            ProgressBarReset();
+        }
+
+        // Resets Progress Bar
+        private void ProgressBarInitialize()
+        {
+            ProgressBar ProgressGo = CompOSProgressBar;
+            ProgressGo.Foreground = Brushes.DarkGreen;
+            Duration duration = new Duration(TimeSpan.FromSeconds(0.5));
+            DoubleAnimation doubleanimation = new DoubleAnimation(100, duration);
+            ProgressGo.BeginAnimation(ProgressBar.ValueProperty, doubleanimation);
+        }
+
+        // Resets Progress Bar
+        private void ProgressBarReset()
+        {
+            ProgressBar ProgressReset = CompOSProgressBar;
+            ProgressReset.Foreground = Brushes.DarkGreen;
+            Duration durations = new Duration(TimeSpan.FromSeconds(0.1));
+            DoubleAnimation doubleanimatiosn = new DoubleAnimation(0, durations);
+            ProgressReset.BeginAnimation(ProgressBar.ValueProperty, doubleanimatiosn);
+            ProgressReset.BeginAnimation(ProgressBar.ValueProperty, null);
         }
     }
 

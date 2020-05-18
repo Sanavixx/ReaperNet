@@ -1,8 +1,4 @@
-﻿#--------------------------------------------
-# Get System Type Information
-#--------------------------------------------
-
-Param(
+﻿Param(
 [string] $ComputerName
 )
 
@@ -12,7 +8,7 @@ Function Get-SystemType {
     Param (
         [alias('dnsHostName')]
         [Parameter(ValueFromPipelineByPropertyName=$true,ValueFromPipeline=$true)]
-        [string]$ComputerName = $Env:COMPUTERNAME
+        [string]$ComputerName
     )
     
     Begin {
@@ -64,8 +60,20 @@ Function Get-SystemType {
         Try {
             $SystemInfo = Get-WmiObject Win32_SystemEnclosure -ComputerName $ComputerName
             $CSInfo = Get-WmiObject -Query "Select Model FROM Win32_ComputerSystem" -ComputerName $ComputerName
+            $OSWin32_OS = Get-WmiObject -Query "SELECT * FROM Win32_OperatingSystem" -ComputerName $ComputerName
+            $OSArchi = $OSWin32_OS.BuildNumber
+            If ($OSArchi -eq "15063") {
+                $OSArchi = "SDC v5.4"
+            }
+            If ($OSArchi -eq "16299") {
+                 $OSArchi = "SDC v5.5"
+            }
+            Else {
+                $OSArchi = "SDC v5.7"
+            }
             $myobj = @{}
             $myobj.ComputerName = $ComputerName
+            $myobj.SDC= $OSArchi
             $myobj.Manufacturer = $SystemInfo.Manufacturer
             $myobj.Model = $CSInfo.Model
             $myobj.SerialNumber = $SystemInfo.SerialNumber

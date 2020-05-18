@@ -96,7 +96,7 @@
             <Setter Property="VerticalContentAlignment" Value="Top"/>
             <Setter Property="HorizontalAlignment" Value="Left"/>
             <Setter Property="Foreground" Value="#EAF16F"/>
-            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="FontSize" Value="14"/>
             <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Auto"/>
             <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Auto"/>
         </Style>
@@ -785,9 +785,8 @@
                             Margin="5,170,0,0" 
                             Height="350">
                             <FlowDocument 
-                                LineHeight="3"
-                                >
-                                <Paragraph>
+                                LineHeight="3">
+                                <Paragraph LineHeight="3">
                                     <Run Text=""/>
                                 </Paragraph>
                             </FlowDocument>
@@ -852,41 +851,41 @@
                             </TextBlock.Effect>
                         </TextBlock>
                         <Button 
-                            x:Name="SystemTypeButton"
-                            Content="System Type" 
+                            x:Name="SystemCheckButton"
+                            Content="System Check" 
                             Height="35"
                             Style="{StaticResource CompOSButtonsStyle}" 
-                            Margin="5,105,195,345" Click="SystemTypeButton_Click"/>
+                            Margin="5,105,195,345" Click="SystemCheckButton_Click"/>
                         <Button 
                             x:Name="PrintersButton"
                             Content="Printers" 
                             Height="35"
                             Style="{StaticResource CompOSButtonsStyle}" 
-                            Margin="5,150,195,300"/>
+                            Margin="5,150,195,300" Click="PrintersButton_Click"/>
                         <Button 
                             x:Name="ApplicationsButton"
                             Content="Applications" 
                             Height="35"
                             Style="{StaticResource CompOSButtonsStyle}" 
-                            Margin="5,195,195,255"/>
+                            Margin="5,195,195,255" Click="ApplicationsButton_Click"/>
                         <Button 
                             x:Name="ProcessesButton"
                             Content="Processes" 
                             Height="35"
                             Style="{StaticResource CompOSButtonsStyle}" 
-                            Margin="5,240,195,210"/>
+                            Margin="5,240,195,210" Click="ProcessesButton_Click"/>
                         <Button 
                             x:Name="ServicesButton"
                             Content="Services" 
                             Height="35"
                             Style="{StaticResource CompOSButtonsStyle}" 
-                            Margin="5,285,195,165"/>
+                            Margin="5,285,195,165" Click="ServicesButton_Click"/>
                         <Button 
                             x:Name="GetHotFixButton"
                             Content="Get-Hotfix" 
                             Height="35"
                             Style="{StaticResource CompOSButtonsStyle}" 
-                            Margin="5,330,195,120"/>
+                            Margin="5,330,195,120" Click="GetHotFixButton_Click"/>
                         <Button 
                             x:Name="LocalUsersButton"
                             Content="Local Users" 
@@ -904,7 +903,7 @@
                             Content="IP Config" 
                             Height="35"
                             Style="{StaticResource CompOSButtonsStyle}" 
-                            Margin="195,105,10,345"/>
+                            Margin="195,105,10,345" Click="IPConfigButton_Click"/>
                         <Button 
                             x:Name="RouteTableButton"
                             Content="Route Table" 

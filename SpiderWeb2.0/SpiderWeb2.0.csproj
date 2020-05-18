@@ -140,6 +140,12 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="Scripts\applications.ps1" />
+    <None Include="Scripts\hotfixes.ps1" />
+    <None Include="Scripts\ipconfig.ps1" />
+    <None Include="Scripts\printers.ps1" />
+    <None Include="Scripts\processes.ps1" />
+    <None Include="Scripts\services.ps1" />
     <None Include="Scripts\systemtype.ps1" />
     <Resource Include="Fonts\SpaceGrotesk-Regular.ttf" />
     <None Include="packages.config" />
